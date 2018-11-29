@@ -1,0 +1,105 @@
+/* general */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+
+.title {
+  margin: 0;
+}
+
+
+.list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: .5rem;
+}
+
+.handle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: lightgray;
+  border-radius: 4px;
+
+}
+
+.card-container {
+
+  overflow: hidden;
+  display: flex;
+  margin: 5px 0;
+  border-radius: 4px;
+  transition: .5s all;
+  background: white;
+  align-items: center;
+  min-height: 55px;
+  border: thin black solid;
+  width: 350px
+}
+
+
+
+.card-handle {
+
+  position: relative;
+  height: 55px;
+  width: 60px;
+  padding: 0;
+}
+
+.card-handle:hover {
+  cursor: move;
+}
+
+.card {
+  border-left: solid thin black;
+  padding: 10px;
+}
+
+
+
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #55B1C3;
+  border-radius: 10px;
+}
